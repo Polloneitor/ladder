@@ -18,4 +18,5 @@ class Home extends BaseController
         echo view('index.php');
         echo view('footer.php');   
     }
+        
 }

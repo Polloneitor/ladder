@@ -15,7 +15,7 @@
         <div class="container" style="background-color:rgb(69, 138, 184)" >
             <div class="row">
                 <div class="col-1">
-                  <img src="images/bongo.gif"width="100" height="100">
+                  <img src="<?php echo base_url()?>/images/bongo.gif"width="100" height="100">
                 </div>
                 <div class="col-3">
                     <h1 style="color:rgba(255, 255, 255, 0.938)"></h1>
@@ -24,7 +24,7 @@
                     <h1 style="color:rgba(255, 255, 255, 0.938)">Proyecto Ladder</h1>
                 </div>
                 <div class="col-2">
-                    <img src="images/bongo.gif"width="100" height="100">
+                    <img src="<?php echo base_url()?>/images/bongo.gif"width="100" height="100">
                 </div>
               </div>
          
@@ -32,14 +32,14 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="images/boo.gif"width="100" height="100" style="border-radius: 30px;">
+                    <img src="<?php echo base_url()?>/images/boo.gif"width="100" height="100" style="border-radius: 30px;">
                 </div>
                 <div class="col-9"style="background-image: url(images/paisaje.jpg); background-repeat:repeat;background-size: contain;border-radius: 30px;">
 
                 </div>
                 
                 <div class="col">
-                    <img src="images/boo.gif"width="100" height="100"style="border-radius: 30px;">
+                    <img src="<?php echo base_url()?>/images/boo.gif"width="100" height="100"style="border-radius: 30px;">
 
                 </div>
             </div>
@@ -49,7 +49,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid"style="background-color:orange ;border-radius:30px">
                   <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png"width="60" height="60"style="border-radius: 30px;">
+                    <img src="<?php echo base_url()?>/images/logo.png"width="60" height="60"style="border-radius: 30px;">
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -162,7 +162,7 @@
                 </div>
               </nav>
 
-              <img src="images/blanco.jpg"width="100" height="50">
+              <img src="<?php echo base_url()?>/images/blanco.jpg"width="100" height="50">
 
               <div class="row">
                 <div class="col-1">
@@ -170,23 +170,23 @@
                 </div>
 
                 <div class="col-4">
-                  <img src="images/perfil.jpg"width="350" height="300"style="border-radius: 30px;">
+                  <img src="<?php echo base_url()?>/images/perfil.jpg"width="350" height="300"style="border-radius: 30px;">
 
                 </div>
                 <div class="col-5">
                   <h3 style="color: rgb(21, 6, 54);">Nombre:"Usuario"</h3>
                   <h3 style="color: rgb(21, 6, 54);">Nombre Personaje:"Eduardo"</h3>
                   <h3 style="color: rgb(21, 6, 54);">Nivel:35</h3>
-                  <img src="images/blanco.jpg"width="200" height="100">
+                  <img src="<?php echo base_url()?>/images/blanco.jpg"width="200" height="100">
 
-                  <img src="images/gato.jpg"width="150" height="150"style="border-radius: 30px;">
+                  <img src="<?php echo base_url()?>/images/gato.jpg"width="150" height="150"style="border-radius: 30px;">
                 </div>
 
               </div>
                
 
                
-            <img src="images/blanco.jpg"width="100" height="100">
+            <img src="<?php echo base_url()?>/images/blanco.jpg"width="100" height="100">
             <div class="row">
               <div class="col-3"></div>
               <div class="col-3">
@@ -198,12 +198,12 @@
             <div class="row">
               <div class="col-3"></div>
               <div class="col-6">
-                <img src="images/objetos.jpg"width="100%" height="310"style="border-radius: 30px;">
+                <img src="<?php echo base_url()?>/images/objetos.jpg"width="100%" height="310"style="border-radius: 30px;">
               </div>
               <div class="col-3"></div>
 
             </div>
-            <img src="images/blanco.jpg"width="200" height="100">
+            <img src="<?php echo base_url()?>/images/blanco.jpg"width="200" height="100">
 
 
         </div>

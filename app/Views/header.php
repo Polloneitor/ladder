@@ -15,7 +15,7 @@
         <div class="container" style="background-color:rgb(69, 138, 184)" >
             <div class="row">
                 <div class="col-1">
-                  <img src="images/bongo.gif"width="100" height="100">
+                  <img src="<?php echo base_url()?>/images/bongo.gif"width="100" height="100">
                 </div>
                 <div class="col-3">
                     <h1 style="color:rgba(255, 255, 255, 0.938)"></h1>
@@ -24,7 +24,7 @@
                     <h1 style="color:rgba(255, 255, 255, 0.938)">Proyecto Ladder</h1>
                 </div>
                 <div class="col-2">
-                    <img src="images/bongo.gif"width="100" height="100">
+                    <img src="<?php echo base_url()?>/images/bongo.gif"width="100" height="100">
                 </div>
               </div>
          
@@ -32,14 +32,14 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="images/boo.gif"width="100" height="100" style="border-radius: 30px;">
+                    <img src="<?php echo base_url()?>/images/boo.gif"width="100" height="100" style="border-radius: 30px;">
                 </div>
-                <div class="col-9"style="background-image: url(images/paisaje.jpg); background-repeat:repeat;background-size: contain;border-radius: 30px;">
+                <div class="col-9"style="background-image: url(<?php echo base_url()?>/images/paisaje.jpg); background-repeat:repeat;background-size: contain;border-radius: 30px;">
 
                 </div>
                 
                 <div class="col">
-                    <img src="images/boo.gif"width="100" height="100"style="border-radius: 30px;">
+                    <img src="<?php echo base_url()?>/images/boo.gif"width="100" height="100"style="border-radius: 30px;">
 
                 </div>
             </div>
