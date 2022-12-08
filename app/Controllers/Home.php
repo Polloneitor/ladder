@@ -6,6 +6,7 @@ use App\Models\rutinaModel;
 use App\Models\tipoModel;
 use App\Models\UserModel;
 use App\Models\especieModel;
+use CodeIgniter\I18n\Time;
 class Home extends BaseController
 {
     public function index()
@@ -122,5 +123,25 @@ class Home extends BaseController
         echo view('footer');
     
     }
-        
+    
+    public function ver_rutinas(){
+        $db = \Config\Database::connect();
+        $model=new rutinaModel($db);
+        $users = $model->findAll();
+        $data['listaRutina']=$users;
+     
+        echo view('header.php');
+        echo view('navbar.php');
+        echo view('paginas/rutina.php',$data);
+        echo view('footer.php');   
+    }
+
+
+
+
+
+
+
+
+
 }

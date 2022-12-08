@@ -391,3 +391,47 @@ in APPPATH\Views\perfil.php on line 35.
  7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 12:03:06 --> Class "App\Controllers\Time" not found
+in APPPATH\Controllers\Home.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 12:03:46 --> Cannot use object of type CodeIgniter\I18n\Time as array
+in APPPATH\Controllers\Home.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 12:03:52 --> Cannot use object of type CodeIgniter\I18n\Time as array
+in APPPATH\Controllers\Home.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 12:04:32 --> Call to undefined method CodeIgniter\I18n\Time::findALL()
+in APPPATH\Controllers\Home.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 12:05:05 --> Cannot use object of type CodeIgniter\I18n\Time as array
+in APPPATH\Controllers\Home.php on line 133.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 12:05:46 --> Undefined variable $year
+in APPPATH\Controllers\Home.php on line 132.
+ 1 APPPATH\Controllers\Home.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $year', 'APPPATH\\Controllers\\Home.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 12:08:47 --> Undefined variable $year
+in APPPATH\Controllers\Home.php on line 132.
+ 1 APPPATH\Controllers\Home.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $year', 'APPPATH\\Controllers\\Home.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

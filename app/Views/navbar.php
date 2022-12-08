@@ -27,6 +27,9 @@
                         <a class="nav-link active" aria-current="page" href="/ladder/Home/ver_perfil"><h3 style="color: white;">Perfil</h3></a>
                       </li>
                       <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/ladder/Home/ver_rutinas"><h3 style="color: white;">Rutinas</h3></a>
+                      </li>
+                      <li class="nav-item">
                         <a class="nav-link" href="#"><h3 style="color: white;">Estadisticas</h3></a>
                       </li>
                       <li class="nav-item">
@@ -46,21 +49,8 @@
                       <li class="nav-item">
                         <a class="nav-link" href="#"></a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                      </li>
+                      
+                      
                       <li class="nav-item">
                         <a class="nav-link" href="#"></a>
                       </li>
