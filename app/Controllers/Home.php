@@ -127,14 +127,93 @@ class Home extends BaseController
     public function ver_rutinas(){
         $db = \Config\Database::connect();
         $model=new rutinaModel($db);
+        $model2=new tipoModel($db);
         $users = $model->findAll();
+        $users2 = $model2->findAll();
         $data['listaRutina']=$users;
-     
+        $data['listaTipo']=$users2;
+       
         echo view('header.php');
         echo view('navbar.php');
         echo view('paginas/rutina.php',$data);
         echo view('footer.php');   
     }
+
+    public function enviar_crear_rutina(){
+        $db = \Config\Database::connect();
+        $model=new rutinaModel($db);
+        $model2=new tipoModel($db);
+        $users = $model->findAll();
+        $users2 = $model2->findAll();
+        $data['listaRutina']=$users;
+        $data['listaTipo']=$users2;
+        $ejercicio=$this->request->getPost('tipo');
+        print_r($ejercicio);
+        echo view('header.php');
+        echo view('navbar.php');
+        echo view('paginas/crearRutina.php',$data);
+        echo view('footer.php');   
+    }
+
+    public function enviar_crear_rutina2(){
+        $db = \Config\Database::connect();
+        $request = \Config\Services::request();
+        $model=new rutinaModel($db);
+        $model2=new tipoModel($db);
+        $users = $model->findAll();
+        $users2 = $model2->findAll();
+        $data['listaRutina']=$users;
+        $data['listaTipo']=$users2;
+        $ejercicio=$this->request->getPost('tipoID');
+        $data['listaID']=$ejercicio;
+        //print_r($ejercicio);
+        echo view('header.php');
+        echo view('navbar.php');
+        echo view('paginas/crearRutina2.php',$data);
+        echo view('footer.php');  
+    }
+
+    public function crear_rutina(){
+        $db = \Config\Database::connect();
+        $request = \Config\Services::request();
+        $model=new rutinaModel($db);
+        $model2=new tipoModel($db);
+        $users = $model->findAll();
+        $users2 = $model2->findAll();
+        $data['listaRutina']=$users;
+        $data['listaTipo']=$users2;
+
+
+        $session = session();
+        $id=$session->get('id');
+        $ejercicio=$this->request->getPost('tipoID');
+        $duracion=$this->request->getPost('duracion');
+        $repeticiones=$this->request->getPost('repeticiones');
+        $distancia=$this->request->getPost('distancia');
+        $experiencia=($distancia*$duracion)+($duracion*$repeticiones);
+        $datos =[
+            
+            "tipoID" => $ejercicio,
+            "userID" => $id,
+            "duracion"=> $duracion,
+            "repeticiones"=>$repeticiones,
+            "distancia"=>$distancia,
+            "experiencia"=>$experiencia,
+
+            
+        ];
+        $model->insert($datos);
+
+        $data['listaID']=$ejercicio;
+        //print_r($ejercicio);
+        $db = \Config\Database::connect();
+        $request = \Config\Services::request();
+        echo view('header.php');
+        echo view('navbar.php');
+        echo view('index.php',$data);
+        echo view('footer.php');  
+    }
+
 
 
 

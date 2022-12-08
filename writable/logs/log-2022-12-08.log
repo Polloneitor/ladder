@@ -435,3 +435,160 @@ in APPPATH\Controllers\Home.php on line 132.
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 14:08:36 --> Undefined array key 2
+in APPPATH\Views\perfil.php on line 36.
+ 1 APPPATH\Views\perfil.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 2', 'APPPATH\\Views\\perfil.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\perfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(28): view('perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 14:19:33 --> Undefined array key "tipoID"
+in APPPATH\Views\paginas\rutina.php on line 24.
+ 1 APPPATH\Views\paginas\rutina.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipoID"', 'APPPATH\\Views\\paginas\\rutina.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\rutina.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/rutina.php', [], true)
+ 5 APPPATH\Controllers\Home.php(137): view('paginas/rutina.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 14:20:03 --> Undefined array key "nombre"
+in APPPATH\Views\paginas\rutina.php on line 25.
+ 1 APPPATH\Views\paginas\rutina.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombre"', 'APPPATH\\Views\\paginas\\rutina.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\rutina.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/rutina.php', [], true)
+ 5 APPPATH\Controllers\Home.php(137): view('paginas/rutina.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 14:20:13 --> Undefined array key "nombreTipo"
+in APPPATH\Views\paginas\rutina.php on line 25.
+ 1 APPPATH\Views\paginas\rutina.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombreTipo"', 'APPPATH\\Views\\paginas\\rutina.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\rutina.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/rutina.php', [], true)
+ 5 APPPATH\Controllers\Home.php(137): view('paginas/rutina.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 14:22:58 --> Undefined variable $id
+in APPPATH\Views\paginas\rutina.php on line 22.
+ 1 APPPATH\Views\paginas\rutina.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Views\\paginas\\rutina.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\rutina.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/rutina.php', [], true)
+ 5 APPPATH\Controllers\Home.php(137): view('paginas/rutina.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 14:30:22 --> syntax error, unexpected token ")"
+in APPPATH\Views\paginas\rutina.php on line 46.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/rutina.php', [], true)
+ 3 APPPATH\Controllers\Home.php(137): view('paginas/rutina.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 14:30:40 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\rutina.php on line 58.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/rutina.php', [], true)
+ 3 APPPATH\Controllers\Home.php(137): view('paginas/rutina.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 14:31:39 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\rutina.php on line 61.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/rutina.php', [], true)
+ 3 APPPATH\Controllers\Home.php(137): view('paginas/rutina.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_rutinas()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 15:35:46 --> Undefined variable $id
+in APPPATH\Controllers\Home.php on line 195.
+ 1 APPPATH\Controllers\Home.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\Home.php', 195)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->crear_rutina()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 15:36:05 --> Undefined variable $datos
+in APPPATH\Controllers\Home.php on line 192.
+ 1 APPPATH\Controllers\Home.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'APPPATH\\Controllers\\Home.php', 192)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->crear_rutina()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 15:38:54 --> Undefined variable $request
+in APPPATH\Controllers\Home.php on line 150.
+ 1 APPPATH\Controllers\Home.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'APPPATH\\Controllers\\Home.php', 150)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->enviar_crear_rutina()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 15:40:50 --> syntax error, unexpected token "/"
+in APPPATH\Controllers\Home.php on line 185.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/enviar_crear_rutina')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/enviar_crear_rutina')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/enviar_crear_rutina')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 15:56:45 --> syntax error, unexpected double-quoted string "userID", expecting "]"
+in APPPATH\Controllers\Home.php on line 197.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/enviar_crear_rutina')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/enviar_crear_rutina')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/enviar_crear_rutina')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-08 15:57:53 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ru...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ru...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ru...')
+#3 C:\xampp\htdocs\ladder\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ru...', Array, false)
+#4 C:\xampp\htdocs\ladder\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ladder\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ladder\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ladder\app\Controllers\Home.php(205): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\Home->crear_rutina()
+#9 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-08 15:57:53 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `rutina` (`tipoID`, `userID`, `duracion`, `repeticiones`, `distancia`, `experiencia`, `created_at`, `updated_at`) VALUES (\'2\', \'3\', \'11\', NULL, \'22\', 242, \'2022-12-08 15:57:53\', \'2022-12-08 15:57:53\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `rutina` (`tipoID`, `userID`, `duracion`, `repeticiones`, `distancia`, `experiencia`, `created_at`, `updated_at`) VALUES (\'2\', \'3\', \'11\', NULL, \'22\', 242, \'2022-12-08 15:57:53\', \'2022-12-08 15:57:53\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `rutina` (`tipoID`, `userID`, `duracion`, `repeticiones`, `distancia`, `experiencia`, `created_at`, `updated_at`) VALUES (\'2\', \'3\', \'11\', NULL, \'22\', 242, \'2022-12-08 15:57:53\', \'2022-12-08 15:57:53\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `rutina` (`tipoID`, `userID`, `duracion`, `repeticiones`, `distancia`, `experiencia`, `created_at`, `updated_at`) VALUES (:tipoID:, :userID:, :duracion:, :repeticiones:, :distancia:, :experiencia:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(205): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->crear_rutina()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 16:01:59 --> Invalid file: paginas/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('paginas/index.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/index.php', [], true)
+ 3 APPPATH\Controllers\Home.php(213): view('paginas/index.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->crear_rutina()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
