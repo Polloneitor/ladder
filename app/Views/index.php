@@ -1,9 +1,35 @@
 
         
         <div class="container" style="background-color:white">
-            
+        <?php
+        $session = session();
+        $estadoLog= false;
+        if(isset($session)){
+            if($session->has('isLoggedIn')){
+            if($session->isLoggedIn){
+                $estadoLog = true;
+                }
+            }
+        }
+        ?>
+        
               <div class="row">                    
                 <img src="<?php echo base_url()?>/images/blanco.jpg"width="10" height="100">
+                <div class="col-3"style="background-color:white">
+                    
+                </div>
+                <div class="col-7"style="background-color:white">
+                <?php
+                if($estadoLog){
+                    ?> 
+
+                            <h1>Bienvenido señor/a
+                                <?php $session = session(); echo " : ".$session->get('name');?>
+                            </h1>
+
+                            
+                    <?php }?>
+                </div>
               </div>
               <div class="row">
                 <div class="col-1"style="background-color:white">
@@ -15,7 +41,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Crear Personaje</h5>
                           <p class="card-text">Inicia tu aventura creando a tu personaje</p>
-                          <a href="crear1.html" class="btn btn-primary">Crear</a>
+                          <a href="/ladder/Home/crear_pj" class="btn btn-primary">Crear</a>
                         </div>
                       </div>
                 </div>
