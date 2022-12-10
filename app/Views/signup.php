@@ -7,10 +7,10 @@
     <title>Codeigniter Auth User Registration Example</title>
 </head>
 <body>
-    <div class="container mt-5">
+    <div class="container mt-5" style="margin:5%;background-color:white;">
         <div class="row justify-content-md-center">
             <div class="col-5">
-                <h2>Register User</h2>
+                <h2>Registrarse</h2>
                 <?php if(isset($validation)):?>
                 <div class="alert alert-warning">
                    <?= $validation->listErrors() ?>
@@ -18,19 +18,19 @@
                 <?php endif;?>
                 <form action="<?php echo base_url(); ?>/SignupController/store" method="post">
                     <div class="form-group mb-3">
-                        <input type="text" name="name" placeholder="Name" value="<?= set_value('name') ?>" class="form-control" >
+                        <input type="text" name="name" placeholder="Nombre" value="<?= set_value('name') ?>" class="form-control" >
                     </div>
                     <div class="form-group mb-3">
                         <input type="email" name="email" placeholder="Email" value="<?= set_value('email') ?>" class="form-control" >
                     </div>
                     <div class="form-group mb-3">
-                        <input type="password" name="password" placeholder="Password" class="form-control" >
+                        <input type="password" name="password" placeholder="Contraseña" class="form-control" >
                     </div>
                     <div class="form-group mb-3">
-                        <input type="password" name="confirmpassword" placeholder="Confirm Password" class="form-control" >
+                        <input type="password" name="confirmpassword" placeholder="Confirmar Contraseña" class="form-control" >
                     </div>
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-dark">Signup</button>
+                        <button type="submit" class="btn btn-dark">Registrar</button>
                     </div>
                 </form>
             </div>

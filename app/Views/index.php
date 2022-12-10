@@ -32,7 +32,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-1"style="background-color:white">
+                <div class="col-1" style="background-color:white">
                     <img src="<?php echo base_url()?>/images/blanco.jpg"width="10" height="10">
                 </div>
                 <div class="col"style="background-color:blue">

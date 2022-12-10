@@ -1,0 +1,483 @@
+CRITICAL - 2022-12-10 09:25:46 --> Undefined property: App\Controllers\DiagramaGraph::$db
+in APPPATH\Controllers\DiagramaGraph.php on line 18.
+ 1 APPPATH\Controllers\DiagramaGraph.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DiagramaGraph::$db', 'APPPATH\\Controllers\\DiagramaGraph.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:26:03 --> mysqli_sql_exception: Table 'ladder.ladder' doesn't exist in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT created_...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT created_...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT created_...')
+#3 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(18): CodeIgniter\Database\BaseConnection->query('SELECT created_...')
+#4 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-10 09:26:03 --> Table 'ladder.ladder' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM ladder WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM ladder WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM ladder WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 4 APPPATH\Controllers\DiagramaGraph.php(18): CodeIgniter\Database\BaseConnection->query('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM ladder WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:26:17 --> Undefined property: App\Controllers\DiagramaGraph::$db
+in APPPATH\Controllers\DiagramaGraph.php on line 18.
+ 1 APPPATH\Controllers\DiagramaGraph.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DiagramaGraph::$db', 'APPPATH\\Controllers\\DiagramaGraph.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:27:43 --> Cannot call constructor
+in APPPATH\Controllers\DiagramaGraph.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(866): App\Controllers\DiagramaGraph->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:27:51 --> Undefined property: App\Controllers\DiagramaGraph::$load
+in APPPATH\Controllers\DiagramaGraph.php on line 14.
+ 1 APPPATH\Controllers\DiagramaGraph.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DiagramaGraph::$load', 'APPPATH\\Controllers\\DiagramaGraph.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(866): App\Controllers\DiagramaGraph->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:30:28 --> mysqli_sql_exception: Table 'ladder.product' doesn't exist in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(ex...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(ex...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(ex...')
+#3 C:\xampp\htdocs\ladder\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(ex...', Array, false)
+#4 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-10 09:30:28 --> Table 'ladder.product' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(experiencia) as count, DAYNAME(created_at) as day
+FROM `product`
+WHERE DAY(created_at) GROUP BY DAYNAME(created_at), s', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(experiencia) as count, DAYNAME(created_at) as day
+FROM `product`
+WHERE DAY(created_at) GROUP BY DAYNAME(created_at), s')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(experiencia) as count, DAYNAME(created_at) as day
+FROM `product`
+WHERE DAY(created_at) GROUP BY DAYNAME(created_at), s')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(experiencia) as count, DAYNAME(created_at) as day
+FROM `product`
+WHERE DAY(created_at) GROUP BY DAYNAME(created_at), s', [], false)
+ 5 APPPATH\Controllers\DiagramaGraph.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:35:26 --> mysqli_sql_exception: Table 'ladder.ladder' doesn't exist in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT created_...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT created_...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT created_...')
+#3 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(18): CodeIgniter\Database\BaseConnection->query('SELECT created_...')
+#4 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-10 09:35:26 --> Table 'ladder.ladder' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM ladder WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM ladder WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM ladder WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 4 APPPATH\Controllers\DiagramaGraph.php(18): CodeIgniter\Database\BaseConnection->query('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM ladder WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:35:54 --> mysqli_sql_exception: Unknown column 'experienia' in 'field list' in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT created_...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT created_...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT created_...')
+#3 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(18): CodeIgniter\Database\BaseConnection->query('SELECT created_...')
+#4 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-10 09:35:54 --> Unknown column 'experienia' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 4 APPPATH\Controllers\DiagramaGraph.php(18): CodeIgniter\Database\BaseConnection->query('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experienia) as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:36:04 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Controllers\DiagramaGraph.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:36:33 --> Undefined property: stdClass::$title
+in APPPATH\Controllers\DiagramaGraph.php on line 21.
+ 1 APPPATH\Controllers\DiagramaGraph.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$title', 'APPPATH\\Controllers\\DiagramaGraph.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:36:52 --> Undefined variable $record
+in APPPATH\Controllers\DiagramaGraph.php on line 27.
+ 1 APPPATH\Controllers\DiagramaGraph.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $record', 'APPPATH\\Controllers\\DiagramaGraph.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:37:30 --> Undefined property: mysqli::$day_name
+in APPPATH\Controllers\DiagramaGraph.php on line 22.
+ 1 APPPATH\Controllers\DiagramaGraph.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$day_name', 'APPPATH\\Controllers\\DiagramaGraph.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:37:52 --> Undefined property: mysqli::$y_date
+in APPPATH\Controllers\DiagramaGraph.php on line 22.
+ 1 APPPATH\Controllers\DiagramaGraph.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$y_date', 'APPPATH\\Controllers\\DiagramaGraph.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:38:08 --> Attempt to read property "day_name" on array
+in APPPATH\Controllers\DiagramaGraph.php on line 24.
+ 1 APPPATH\Controllers\DiagramaGraph.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "day_name" on array', 'APPPATH\\Controllers\\DiagramaGraph.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:38:26 --> Undefined property: App\Controllers\DiagramaGraph::$load
+in APPPATH\Controllers\DiagramaGraph.php on line 28.
+ 1 APPPATH\Controllers\DiagramaGraph.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DiagramaGraph::$load', 'APPPATH\\Controllers\\DiagramaGraph.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:38:46 --> Undefined property: App\Controllers\DiagramaGraph::$load
+in APPPATH\Controllers\DiagramaGraph.php on line 28.
+ 1 APPPATH\Controllers\DiagramaGraph.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DiagramaGraph::$load', 'APPPATH\\Controllers\\DiagramaGraph.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:39:01 --> Invalid file: pagina\grafica.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pagina\\grafica.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('pagina\\grafica', [], true)
+ 3 APPPATH\Controllers\DiagramaGraph.php(29): view('pagina\\grafica', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:39:17 --> Undefined property: App\Controllers\DiagramaGraph::$load
+in APPPATH\Controllers\DiagramaGraph.php on line 28.
+ 1 APPPATH\Controllers\DiagramaGraph.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DiagramaGraph::$load', 'APPPATH\\Controllers\\DiagramaGraph.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:39:36 --> Undefined variable $products
+in APPPATH\Views\paginas\grafica.php on line 29.
+ 1 APPPATH\Views\paginas\grafica.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'APPPATH\\Views\\paginas\\grafica.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\grafica.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas\\grafica', [], true)
+ 5 APPPATH\Controllers\DiagramaGraph.php(29): view('paginas\\grafica', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:43:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2022' at line 1 in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT created_...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT created_...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT created_...')
+#3 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(18): CodeIgniter\Database\BaseConnection->query('SELECT created_...')
+#4 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-10 09:43:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''2022' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT created_at as y_date, DAYNAME(created_at) as day_name, experiencia as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT created_at as y_date, DAYNAME(created_at) as day_name, experiencia as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT created_at as y_date, DAYNAME(created_at) as day_name, experiencia as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022')
+ 4 APPPATH\Controllers\DiagramaGraph.php(18): CodeIgniter\Database\BaseConnection->query('SELECT created_at as y_date, DAYNAME(created_at) as day_name, experiencia as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:44:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY)...' at line 1 in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT created_...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT created_...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT created_...')
+#3 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(18): CodeIgniter\Database\BaseConnection->query('SELECT created_...')
+#4 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-10 09:44:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY)...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experiencia as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experiencia as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experiencia as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 4 APPPATH\Controllers\DiagramaGraph.php(18): CodeIgniter\Database\BaseConnection->query('SELECT created_at as y_date, DAYNAME(created_at) as day_name, COUNT(experiencia as count  FROM rutina WHERE date(created_at) > (DATE(NOW()) - INTERVAL 7 DAY) AND MONTH(created_at) = \'12\' AND YEAR(created_at) = \'2022\' GROUP BY DAYNAME(created_at) ORDER BY (y_date) ASC')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:47:55 --> mysqli_sql_exception: Table 'ladder.product' doesn't exist in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `experie...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `experie...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `experie...')
+#3 C:\xampp\htdocs\ladder\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `experie...', Array, false)
+#4 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-10 09:47:55 --> Table 'ladder.product' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `product`
+WHERE DAY(created_at) GROUP BY DAYNAME(created_at)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `product`
+WHERE DAY(created_at) GROUP BY DAYNAME(created_at)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `product`
+WHERE DAY(created_at) GROUP BY DAYNAME(created_at)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `product`
+WHERE DAY(created_at) GROUP BY DAYNAME(created_at)', [], false)
+ 5 APPPATH\Controllers\DiagramaGraph.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:48:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY DAYNAME(created_at)' at line 3 in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `experie...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `experie...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `experie...')
+#3 C:\xampp\htdocs\ladder\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `experie...', Array, false)
+#4 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-10 09:48:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY DAYNAME(created_at)' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `rutina`
+WHERE GROUP BY DAYNAME(created_at)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `rutina`
+WHERE GROUP BY DAYNAME(created_at)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `rutina`
+WHERE GROUP BY DAYNAME(created_at)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `rutina`
+WHERE GROUP BY DAYNAME(created_at)', [], false)
+ 5 APPPATH\Controllers\DiagramaGraph.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:53:10 --> mysqli_sql_exception: Unknown column 'create_at' in 'group statement' in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `experie...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `experie...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `experie...')
+#3 C:\xampp\htdocs\ladder\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `experie...', Array, false)
+#4 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-10 09:53:10 --> Unknown column 'create_at' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `rutina`
+GROUP BY DAYNAME(create_at)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `rutina`
+GROUP BY DAYNAME(create_at)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `rutina`
+GROUP BY DAYNAME(create_at)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `experiencia` as `count`, DAYNAME(created_at) as day
+FROM `rutina`
+GROUP BY DAYNAME(create_at)', [], false)
+ 5 APPPATH\Controllers\DiagramaGraph.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:54:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as `count`) AS `experiencia as count`
+FROM `rutina`
+GROUP BY DAYNAME(created_at)' at line 1 in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DAYNAME(...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DAYNAME(...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DAYNAME(...')
+#3 C:\xampp\htdocs\ladder\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DAYNAME(...', Array, false)
+#4 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-10 09:54:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as `count`) AS `experiencia as count`
+FROM `rutina`
+GROUP BY DAYNAME(created_at)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DAYNAME(created_at) as day, SUM(`experiencia` as `count`) AS `experiencia as count`
+FROM `rutina`
+GROUP BY DAYNAME(created_at)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DAYNAME(created_at) as day, SUM(`experiencia` as `count`) AS `experiencia as count`
+FROM `rutina`
+GROUP BY DAYNAME(created_at)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DAYNAME(created_at) as day, SUM(`experiencia` as `count`) AS `experiencia as count`
+FROM `rutina`
+GROUP BY DAYNAME(created_at)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DAYNAME(created_at) as day, SUM(`experiencia` as `count`) AS `experiencia as count`
+FROM `rutina`
+GROUP BY DAYNAME(created_at)', [], false)
+ 5 APPPATH\Controllers\DiagramaGraph.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:55:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutin...' at line 1 in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(`exp...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`exp...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`exp...')
+#3 C:\xampp\htdocs\ladder\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`exp...', Array, false)
+#4 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-10 09:55:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutin...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(`experiencia` as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutina`
+GROUP BY DAYNAME(created_at)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`experiencia` as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutina`
+GROUP BY DAYNAME(created_at)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`experiencia` as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutina`
+GROUP BY DAYNAME(created_at)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`experiencia` as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutina`
+GROUP BY DAYNAME(created_at)', [], false)
+ 5 APPPATH\Controllers\DiagramaGraph.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 09:55:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutina`' at line 1 in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(`exp...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`exp...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`exp...')
+#3 C:\xampp\htdocs\ladder\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`exp...', Array, false)
+#4 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-10 09:55:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutina`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(`experiencia` as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutina`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`experiencia` as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutina`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`experiencia` as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutina`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`experiencia` as `count`) AS `experiencia as count`, DAYNAME(created_at) as day
+FROM `rutina`', [], false)
+ 5 APPPATH\Controllers\DiagramaGraph.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-10 09:55:34 --> Undefined property: stdClass::$count
+in APPPATH\Controllers\DiagramaGraph.php on line 27.
+ 1 APPPATH\Controllers\DiagramaGraph.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$count', 'APPPATH\\Controllers\\DiagramaGraph.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-10 10:12:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:experiencia` !=0 AND `distancia` !=0 AND userID:
+GROUP BY DAYNAME(created_a...' at line 3 in C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ladder\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(`exp...', 0)
+#1 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`exp...')
+#2 C:\xampp\htdocs\ladder\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`exp...')
+#3 C:\xampp\htdocs\ladder\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`exp...', Array, false)
+#4 C:\xampp\htdocs\ladder\app\Controllers\DiagramaGraph.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ladder\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\ladder\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\ladder\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ladder\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-10 10:12:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`:experiencia` !=0 AND `distancia` !=0 AND userID:
+GROUP BY DAYNAME(created_a...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(`experiencia`) AS `experiencia`, SUM(`distancia`) AS `distancia`, DAYNAME(created_at) as day
+FROM `rutina`
+WHERE `experiencia` !=0 AND `distancia` !=0 AND `userID` `:experiencia` !=0 AND `distancia` !=0 AND userID:
+GROUP BY DAYNAME(created_at)
+ORDER BY DAYNAME(created_at) DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`experiencia`) AS `experiencia`, SUM(`distancia`) AS `distancia`, DAYNAME(created_at) as day
+FROM `rutina`
+WHERE `experiencia` !=0 AND `distancia` !=0 AND `userID` `:experiencia` !=0 AND `distancia` !=0 AND userID:
+GROUP BY DAYNAME(created_at)
+ORDER BY DAYNAME(created_at) DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`experiencia`) AS `experiencia`, SUM(`distancia`) AS `distancia`, DAYNAME(created_at) as day
+FROM `rutina`
+WHERE `experiencia` !=0 AND `distancia` !=0 AND `userID` `:experiencia` !=0 AND `distancia` !=0 AND userID:
+GROUP BY DAYNAME(created_at)
+ORDER BY DAYNAME(created_at) DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`experiencia`) AS `experiencia`, SUM(`distancia`) AS `distancia`, DAYNAME(created_at) as day
+FROM `rutina`
+WHERE `experiencia` !=0 AND `distancia` !=0 AND `userID` `:experiencia` !=0 AND `distancia` !=0 AND userID:
+GROUP BY DAYNAME(created_at)
+ORDER BY DAYNAME(created_at) DESC', [...], false)
+ 5 APPPATH\Controllers\DiagramaGraph.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

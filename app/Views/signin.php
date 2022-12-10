@@ -7,11 +7,11 @@
     <title>Codeigniter Login with Email/Password Example</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" style="margin:5%;background-color:white;">
         <div class="row justify-content-md-center">
             <div class="col-5">
                 
-                <h2>Login in</h2>
+                <h2>Iniciar Sesión</h2>
                 
                 <?php if(session()->getFlashdata('msg')):?>
                     <div class="alert alert-warning">
@@ -23,11 +23,11 @@
                         <input type="email" name="email" placeholder="Email" value="<?= set_value('email') ?>" class="form-control" >
                     </div>
                     <div class="form-group mb-3">
-                        <input type="password" name="password" placeholder="Password" class="form-control" >
+                        <input type="password" name="password" placeholder="Contraseña" class="form-control" >
                     </div>
                     
                     <div class="d-grid">
-                         <button type="submit" class="btn btn-success">Signin</button>
+                         <button type="submit" class="btn btn-success">Conectar</button>
                     </div>     
                 </form>
             </div>

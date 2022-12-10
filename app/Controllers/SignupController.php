@@ -9,7 +9,10 @@ class SignupController extends Controller
     {
         helper(['form']);
         $data = [];
-        echo view('signup', $data);
+        return view('header.php').
+        view('navbar.php').
+        view('signup', $data).
+        view('footer.php');
     }
   
     public function store()

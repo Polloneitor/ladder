@@ -8,7 +8,10 @@ class SigninController extends Controller
     public function index()
     {
         helper(['form']);
-        echo view('signin');
+        return view('header.php').
+        view('navbar.php').
+        view('signin').
+        view('footer.php');
     } 
   
     public function loginAuth()

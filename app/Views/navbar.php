@@ -30,7 +30,7 @@
                         <a class="nav-link active" aria-current="page" href="/ladder/Home/ver_rutinas"><h3 style="color: white;">Rutinas</h3></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#"><h3 style="color: white;">Estadisticas</h3></a>
+                        <a class="nav-link" href="/ladder/DiagramaGraph/initChart"><h3 style="color: white;">Estadisticas</h3></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#"><h3 style="color: white;">Calendario</h3></a>
