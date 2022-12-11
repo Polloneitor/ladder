@@ -32,7 +32,7 @@
 						} ?>
 				]);
 				var options = {
-					title: 'Experiencia Obtenida durante por cada día',
+					title: 'Experiencia Obtenida por cada día',
 					curveType: 'function',
 					legend: {
 						position: 'top'

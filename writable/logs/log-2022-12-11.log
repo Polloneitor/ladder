@@ -1,0 +1,10 @@
+CRITICAL - 2022-12-11 11:47:17 --> Call to undefined function set_value()
+in APPPATH\Views\paginas\codigo.php on line 26.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/codigo.php', [], true)
+ 4 APPPATH\Controllers\Home.php(237): view('paginas/codigo.php')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_codigo()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

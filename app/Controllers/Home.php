@@ -214,7 +214,61 @@ class Home extends BaseController
         echo view('footer.php');  
     }
 
+    public function ver_avances()
+    {
+        echo view('header.php');
+        echo view('navbar.php');
+        echo view('paginas/avances.php');
+        echo view('footer.php');
+    }
 
+    public function ver_customizacion()
+    {
+        echo view('header.php');
+        echo view('navbar.php');
+        echo view('paginas/customizar.php');
+        echo view('footer.php');
+    }
+
+    public function ver_codigo()
+    {
+        echo view('header.php');
+        echo view('navbar.php');
+        echo view('paginas/codigo.php');
+        echo view('footer.php');
+    }
+
+    public function ver_xd()
+    {
+        echo view('header.php');
+        echo view('navbar.php');
+        echo view('paginas/xd.php');
+        echo view('footer.php');
+    }
+
+    public function ver_juego1()
+    {
+        echo view('header.php');
+        echo view('navbar.php');
+        echo view('paginas/juego1.php');
+        echo view('footer.php');
+    }
+
+    public function ver_mapa()
+    {
+        echo view('header.php');
+        echo view('navbar.php');
+        echo view('paginas/mapa.php');
+        echo view('footer.php');
+    }
+
+    public function ver_detalles()
+    {
+        echo view('header.php');
+        echo view('navbar.php');
+        echo view('paginas/detalles.php');
+        echo view('footer.php');
+    }
 
 
 

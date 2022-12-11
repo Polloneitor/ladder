@@ -33,7 +33,7 @@
                         <a class="nav-link" href="/ladder/DiagramaGraph/initChart"><h3 style="color: white;">Estadisticas</h3></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#"><h3 style="color: white;">Calendario</h3></a>
+                        <a class="nav-link" href="/ladder/Home/ver_codigo"><h3 style="color: white;">Codigo </h3></a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#"></a>

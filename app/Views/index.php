@@ -51,7 +51,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Avances</h5>
                           <p class="card-text">Vigila tu progreso en esta aventura.</p>
-                          <a href="#" class="btn btn-primary">Progreso</a>
+                          <a href="/ladder/Home/ver_avances" class="btn btn-primary">Progreso</a>
                         </div>
                       </div>
                 </div>
@@ -61,7 +61,7 @@
                         <div class="card-body">
                           <h5 class="card-title">Customización</h5>
                           <p class="card-text">Edita el equipamiento de tu personaje.</p>
-                          <a href="#" class="btn btn-primary">Inventario</a>
+                          <a href="/ladder/Home/ver_customizacion" class="btn btn-primary">Inventario</a>
                         </div>
                       </div>
                 </div>
@@ -71,9 +71,9 @@
                     <div class="card" style="width: 13rem;">
                         <img src="<?php echo base_url()?>/images/space3.gif" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Resultados</h5>
-                          <p class="card-text">Observa los logros obtenidos.</p>
-                          <a href="#" class="btn btn-primary">Logros</a>
+                          <h5 class="card-title">Juego</h5>
+                          <p class="card-text">Utiliza tus puntos de experiencia.</p>
+                          <a href="/ladder/Home/ver_juego1" class="btn btn-primary">Comenzar</a>
                         </div>
                       </div>
                 </div>
