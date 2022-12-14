@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 
-class DiagramaGraph extends Controller
+class DiagramaGraph extends BaseController
 {
     public function index()
     {
@@ -23,7 +23,7 @@ class DiagramaGraph extends Controller
         $query = $builder->select("DAYNAME(created_at) as day");
         $query = $builder->where("userID", 1)->where("distancia != 0")->where("experiencia != 0");
         $query = $builder->groupBy('DAYNAME(created_at)');
-        $query = $builder->orderBy('DAYNAME(created_at)', 'DESC')->get();
+        $query = $builder->orderBy('DAYNAME(created_at)', 'ASC')->get();
         $record = $query->getResult();
         $products = [];
         foreach ($record as $row) {

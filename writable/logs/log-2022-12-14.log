@@ -1,0 +1,11 @@
+CRITICAL - 2022-12-14 08:20:01 --> Undefined array key 3
+in APPPATH\Views\perfil.php on line 36.
+ 1 APPPATH\Views\perfil.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 3', 'APPPATH\\Views\\perfil.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\perfil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(28): view('perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

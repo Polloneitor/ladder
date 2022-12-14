@@ -103,8 +103,8 @@ class Home extends BaseController
 
         $session = session();
         $id=$session->get('id');
-        print_r($this->request->getPost('nombre'));
-        print_r($this->request->getPost('especie'));
+        //print_r($this->request->getPost('nombre'));
+        //print_r($this->request->getPost('especie'));
         $datos =[
             
             "nombre" => $this->request->getPost('nombre'),
@@ -148,7 +148,7 @@ class Home extends BaseController
         $data['listaRutina']=$users;
         $data['listaTipo']=$users2;
         $ejercicio=$this->request->getPost('tipo');
-        print_r($ejercicio);
+        //print_r($ejercicio);
         echo view('header.php');
         echo view('navbar.php');
         echo view('paginas/crearRutina.php',$data);

@@ -3,7 +3,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\UserModel;
   
-class SigninController extends Controller
+class SigninController extends BaseController
 {
     public function index()
     {

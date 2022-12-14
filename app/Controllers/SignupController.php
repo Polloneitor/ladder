@@ -1,20 +1,22 @@
-<?php 
-namespace App\Controllers;  
+<?php
+
+namespace App\Controllers;
+
 use CodeIgniter\Controller;
 use App\Models\UserModel;
-  
-class SignupController extends Controller
+
+class SignupController extends BaseController
 {
     public function index()
     {
         helper(['form']);
         $data = [];
-        return view('header.php').
-        view('navbar.php').
-        view('signup', $data).
-        view('footer.php');
+        return view('header.php') .
+            view('navbar.php') .
+            view('signup', $data) .
+            view('footer.php');
     }
-  
+
     public function store()
     {
         helper(['form']);
@@ -24,8 +26,8 @@ class SignupController extends Controller
             'password'      => 'required|min_length[4]|max_length[50]',
             'confirmpassword'  => 'matches[password]'
         ];
-          
-        if($this->validate($rules)){
+
+        if ($this->validate($rules)) {
             $userModel = new UserModel();
             $data = [
                 'name'     => $this->request->getVar('name'),
@@ -34,11 +36,12 @@ class SignupController extends Controller
             ];
             $userModel->save($data);
             return redirect()->to('/signin');
-        }else{
+        } else {
             $data['validation'] = $this->validator;
-            echo view('signup', $data);
+            return view('header.php') .
+                view('navbar.php') .
+                view('signup', $data) .
+                view('footer.php');
         }
-          
     }
-  
 }
